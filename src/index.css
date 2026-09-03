@@ -15,13 +15,14 @@
     --font-serif: "DM Serif Text", serif;
 }
 
-html,
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     background-color: black;
     color: white;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 @utility flex-center {
@@ -59,7 +60,7 @@ body {
 
 @layer components {
     main {
-        @apply w-full overflow-x-hidden;
+        @apply w-full;
     }
 
     nav {
